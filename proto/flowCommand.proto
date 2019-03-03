@@ -1,0 +1,10 @@
+// A very simple protocol definition, consisting of only
+// one message.
+
+syntax = "proto2";
+
+message FlowCommandMessage {
+    optional int32 pinNumber = 1;
+    optional bool isOn = 2;
+    optional int32 runTimeMs = 3;
+}

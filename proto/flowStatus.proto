@@ -1,0 +1,21 @@
+// A very simple protocol definition, consisting of only
+// one message.
+
+syntax = "proto2";
+
+message ValveStatus {
+  optional int32 pinNumber = 1;
+  optional bool isOn = 2;
+  optional bool isScheduled = 3;
+  optional int32 flowTimeRemainingMs = 4;
+}
+
+message FlowStatusMessage {
+
+    optional ValveStatus valveStatus= 1;
+
+    optional int32 maxRunTimeMs = 2;
+    optional int32 mainValveRunTimeMs = 3;
+    optional bool mainValveIsOn = 4;
+    optional int32 mainValvePinNumber = 5;
+}

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Libraries">
+      <UniqueIdentifier>{73a25f69-c85d-43b0-a547-ae0228d8365c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\HasMessaging">
+      <UniqueIdentifier>{0c0b7b96-d00c-4862-8548-b3ac411aea83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\NanoPbCodec">
+      <UniqueIdentifier>{8c6913fe-9137-4eac-9f32-db6f7a660f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\nanopb">
+      <UniqueIdentifier>{c4d410a4-d6f4-4a28-934a-40e0f61dec22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\proto">
+      <UniqueIdentifier>{5ed5ee88-855f-4b1f-b571-7430eafe649e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\Valves">
+      <UniqueIdentifier>{bb3fb50b-d77d-4216-a077-7e6f782bbca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\Weather">
+      <UniqueIdentifier>{ae428608-4ad4-4e2e-875c-7c20add1e02f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\NanoPbCodec\NanoPbCodec.h">
+      <Filter>Source Files\Libraries\NanoPbCodec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\HasMessaging\HasMessaging.h">
+      <Filter>Source Files\Libraries\HasMessaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\NanoPbCodec\MessageIds.h">
+      <Filter>Source Files\Libraries\NanoPbCodec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protobuf\nanopb-0.3.9\pb.h">
+      <Filter>Source Files\Libraries\nanopb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protobuf\nanopb-0.3.9\pb_common.h">
+      <Filter>Source Files\Libraries\nanopb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protobuf\nanopb-0.3.9\pb_decode.h">
+      <Filter>Source Files\Libraries\nanopb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protobuf\nanopb-0.3.9\pb_encode.h">
+      <Filter>Source Files\Libraries\nanopb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\proto\motion_detect.pb.h">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\proto\simple.pb.h">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\proto\weather.pb.h">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\FlowControl\FlowControl.h">
+      <Filter>Source Files\Libraries\Valves</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\proto\flowStatus.pb.h">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\Weather\Weather.h">
+      <Filter>Source Files\Libraries\Weather</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\proto\flowCommand.pb.h">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArduinoTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protobuf\nanopb-0.3.9\pb_common.c">
+      <Filter>Source Files\Libraries\nanopb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protobuf\nanopb-0.3.9\pb_decode.c">
+      <Filter>Source Files\Libraries\nanopb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protobuf\nanopb-0.3.9\pb_encode.c">
+      <Filter>Source Files\Libraries\nanopb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\proto\motion_detect.pb.c">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\proto\simple.pb.c">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\proto\weather.pb.c">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="FlowTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\proto\flowStatus.pb.c">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="CodecTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\proto\flowCommand.pb.c">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\proto\motion_detect.pb">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </None>
+    <None Include="..\..\proto\simple.pb">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </None>
+    <None Include="..\..\proto\weather.pb">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </None>
+    <None Include="..\..\proto\flowStatus.pb">
+      <Filter>Source Files\Libraries\proto</Filter>
+    </None>
+  </ItemGroup>
+</Project>
